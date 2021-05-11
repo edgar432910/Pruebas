@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+   
+
+
+    
+
+    <article class="fondo2 ">
+        <div class="container mx-auto mb-44 ">
+            <div class="w-10/12 max-w-xl mx-auto mt-40 lg:mt-32">
+                <form action="{{route('login.index')}}"  method="POST"  class="bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    @csrf
+                    <div class="mb-4">
+                        <h3 class="text-center font-bold text-2xl font-sans" >INICIO DE SESION</h3>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2 font-sans" for="correo">
+                            Correo
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="correo" placeholder="Correo" type="email" name="email" :value="old('email')" required autofocus>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2 " for="password">
+                            Password
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                            type="password" name="password" required autocomplete="current-password">
+                        
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <input type="submit"  class="bg-red-600 hover:bg-azul2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" value="Inicio">
+                           
+                        
+                        
+                        
+                    </div>
+                </form>
+
+            </div>
+
+           
+
+
+        </div>
+    </article>
+    <article class="fondo2 ">
+        <div class="container mx-auto mb-44 ">
+            <div class="w-10/12 max-w-xl mx-auto mt-40 lg:mt-32">
+                <form action="{{route('login.index')}}"  method="POST"  class="bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    
+                    <div class="mb-4">
+                        <h3 class="text-center font-bold text-2xl font-sans" >INICIO DE SESION</h3>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2 font-sans" for="correo">
+                            Correo
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="correo" type="text" placeholder="Correo" name="email">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2 " for="password">
+                            Password
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="password" type="password"  name="password">
+                        
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <input type="submit"  class="bg-red-600 hover:bg-azul2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" value="Inicio">
+                           
+                        
+                        
+                        
+                    </div>
+                </form>
+
+            </div>
+
+           
+
+
+        </div>
+    </article>
+
+    <article class="">
+        <div class="container mx-auto mb-10"> 
+
+            <div class="w-10/12 md:w-5/12 lg:w-3/12 h-7 m-2.5 mx-auto bg-gray-50 border-gray-200 rounded shadow-inner " id="search">
+                <form action="">
+                    <input type="text">
+                    <input type="button" value="Buscar" class="w-3/12" >
+                </form>
+            </div>
+            <div class="grid  lg:grid-cols-3 gap-0 px-6 items-start">
+               
+
+                    <div class="grid  gap-x-4 mt-5 lg:pt-2 px-1 max-w-xl min-w-xs  justify-center mx-auto items-center">
+                        <div class=" overflow-hidden bg-gray-50 rounded-2xl shadow-lg  ">
+                          
+                                <div class="grid grid-cols-4 gap-0 items-center">
+                                    <div class="col-span-1 px-0 mb-4 text-center" >
+                                        <img class="w-full rounded-full" src="./img/plato.jpg" alt="Sunset in the mountains">
+                                    </div>
+                                    <div class="col-span-3 text-gris1 justify-center font-bold  pr-1 mt-4 mb-2 lg:mt-6 lg:mb-4">
+                                           <h3 class="text-base font-mono  " >Codigo: Princi1323ddddssddddds</h3> 
+                                           <p class="text-base text-justify lg:text-xl font-sans">
+                                                    cod :nbs ddddddddd
+                                        
+                                             </p>
+    
+                                             <p class="text-base text-justify lg:text-xl font-serif">
+                                                    cod :nbs dddddddd
+                                            
+                                                 </p>
+                                            <p class="text-base text-justify lg:text-xl ">
+                                                    descripcion sdfsdfjkkkkkkkljkjjjjjjjjjjjjjjj
+                                            </p>
+                                                    
+                                    
+                                    </div>
+                                </div>
+                          
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="grid  gap-x-4 mt-5 lg:pt-2 px-1 max-w-xl min-w-xs  justify-center mx-auto items-center">
+                        <div class=" overflow-hidden bg-gray-50 rounded-2xl shadow-lg  ">
+                          
+                                <div class="grid grid-cols-3 gap-0 items-center">
+                                    <div class="col-span-1 px-0 mb-4 text-center" >
+                                        <img class="w-full" src="./img/plato.jpg" alt="Sunset in the mountains">
+                                    </div>
+                                    <div class="col-span-2 text-gris1 justify-center font-bold  pr-1 mt-4 mb-2 lg:mt-6 lg:mb-4">
+                                           <h3 class="text-base " >Codigo: Princi1323ddddssddddds</h3> 
+                                           <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs ddddddddd
+                                        
+                                             </p>
+    
+                                             <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs dddddddd
+                                            
+                                                 </p>
+                                            <p class="text-base text-justify lg:text-xl">
+                                                    descripcion sdfsdfjkkkkkkkljkjjjjjjjjjjjjjjj
+                                            </p>
+                                                    
+                                    
+                                    </div>
+                                </div>
+                          
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="grid  gap-x-4 mt-5 lg:pt-2 px-1 max-w-xl min-w-xs  justify-center mx-auto items-center">
+                        <div class=" overflow-hidden bg-gray-50 rounded-2xl shadow-lg  ">
+                          
+                                <div class="grid grid-cols-3 gap-0 items-center">
+                                    <div class="col-span-1 px-0 mb-4 text-center" >
+                                        <img class="w-full" src="./img/plato.jpg" alt="Sunset in the mountains">
+                                    </div>
+                                    <div class="col-span-2 text-gris1 justify-center font-bold  pr-1 mt-4 mb-2 lg:mt-6 lg:mb-4">
+                                           <h3 class="text-base " >Codigo: Princi1323ddddssddddds</h3> 
+                                           <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs ddddddddd
+                                        
+                                             </p>
+    
+                                             <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs dddddddd
+                                            
+                                                 </p>
+                                            <p class="text-base text-justify lg:text-xl">
+                                                    descripcion sdfsdfjkkkkkkkljkjjjjjjjjjjjjjjj
+                                            </p>
+                                                    
+                                    
+                                    </div>
+                                </div>
+                          
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="grid  gap-x-4 mt-5 lg:pt-2 px-1 max-w-xl min-w-xs  justify-center mx-auto items-center">
+                        <div class=" overflow-hidden bg-gray-50 rounded-2xl shadow-lg  ">
+                          
+                                <div class="grid grid-cols-3 gap-0 items-center">
+                                    <div class="col-span-1 px-0 mb-4 text-center" >
+                                        <img class="w-full" src="./img/plato.jpg" alt="Sunset in the mountains">
+                                    </div>
+                                    <div class="col-span-2 text-gris1 justify-center font-bold  pr-1 mt-4 mb-2 lg:mt-6 lg:mb-4">
+                                           <h3 class="text-base " >Codigo: Princi1323ddddssddddds</h3> 
+                                           <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs ddddddddd
+                                        
+                                             </p>
+    
+                                             <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs dddddddd
+                                            
+                                                 </p>
+                                            <p class="text-base text-justify lg:text-xl">
+                                                    descripcion sdfsdfjkkkkkkkljkjjjjjjjjjjjjjjj
+                                            </p>
+                                                    
+                                    
+                                    </div>
+                                </div>
+                          
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="grid  gap-x-4 mt-5 lg:pt-2 px-1 max-w-xl min-w-xs  justify-center mx-auto items-center">
+                        <div class=" overflow-hidden bg-gray-50 rounded-2xl shadow-lg  ">
+                          
+                                <div class="grid grid-cols-3 gap-0 items-center">
+                                    <div class="col-span-1 px-0 mb-4 text-center" >
+                                        <img class="w-full" src="./img/plato.jpg" alt="Sunset in the mountains">
+                                    </div>
+                                    <div class="col-span-2 text-gris1 justify-center font-bold  pr-1 mt-4 mb-2 lg:mt-6 lg:mb-4">
+                                           <h3 class="text-base " >Codigo: Princi1323ddddssddddds</h3> 
+                                           <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs ddddddddd
+                                        
+                                             </p>
+    
+                                             <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs dddddddd
+                                            
+                                                 </p>
+                                            <p class="text-base text-justify lg:text-xl">
+                                                    descripcion sdfsdfjkkkkkkkljkjjjjjjjjjjjjjjj
+                                            </p>
+                                                    
+                                    
+                                    </div>
+                                </div>
+                          
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="grid  gap-x-4 mt-5 lg:pt-2 px-1 max-w-xl min-w-xs  justify-center mx-auto items-center">
+                        <div class=" overflow-hidden bg-gray-50 rounded-2xl shadow-lg  ">
+                          
+                                <div class="grid grid-cols-3 gap-0 items-center">
+                                    <div class="col-span-1 px-0 mb-4 text-center" >
+                                        <img class="w-full" src="./img/plato.jpg" alt="Sunset in the mountains">
+                                    </div>
+                                    <div class="col-span-2 text-gris1 justify-center font-bold  pr-1 mt-4 mb-2 lg:mt-6 lg:mb-4">
+                                           <h3 class="text-base " >Codigo: Princi1323ddddssddddds</h3> 
+                                           <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs ddddddddd
+                                        
+                                             </p>
+    
+                                             <p class="text-base text-justify lg:text-xl">
+                                                    cod :nbs dddddddd
+                                            
+                                                 </p>
+                                            <p class="text-base text-justify lg:text-xl">
+                                                    descripcion sdfsdfjkkkkkkkljkjjjjjjjjjjjjjjj
+                                            </p>
+                                                    
+                                    
+                                    </div>
+                                </div>
+                          
+                            
+                            
+                        </div>
+                    </div>
+
+                  
+
+                    
+                    
+
+
+                
+
+            </div>
+        </div>
+    </article>
+    
+    
+    
+
+
+    <script src="{{ asset('js/script.js') }}" >
+    </script>
+</body>
+
+</html>
